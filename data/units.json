@@ -1,0 +1,56 @@
+[
+  {
+    "id": "unit001",
+    "name": "Academic Unit - Computer Science",
+    "departmentId": "dept001",
+    "head": "stf001"
+  },
+  {
+    "id": "unit002",
+    "name": "IT Support Unit",
+    "departmentId": "dept002",
+    "head": "stf010"
+  },
+  {
+    "id": "unit003",
+    "name": "Electrical Engineering Unit",
+    "departmentId": "dept003",
+    "head": "stf003"
+  },
+  {
+    "id": "unit004",
+    "name": "Business Studies Unit",
+    "departmentId": "dept004",
+    "head": "stf004"
+  },
+  {
+    "id": "unit005",
+    "name": "Physics Unit",
+    "departmentId": "dept005",
+    "head": "stf005"
+  },
+  {
+    "id": "unit006",
+    "name": "Library Services Unit",
+    "departmentId": "dept006",
+    "head": "stf006"
+  },
+  {
+    "id": "unit007",
+    "name": "Registry Unit",
+    "departmentId": "dept007",
+    "head": "stf007"
+  },
+  {
+    "id": "unit008",
+    "name": "Student Welfare Unit",
+    "departmentId": "dept008",
+    "head": "stf008"
+  },
+  {
+    "id": "unit009",
+    "name": "Mechanical Engineering Unit",
+    "departmentId": "dept003",
+    "head": "stf009"
+  }
+]
