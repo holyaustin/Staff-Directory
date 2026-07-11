@@ -1,7 +1,5 @@
 # Staff Directory Information System
 
-## Akanu Ibiam Federal Polytechnic, Unwana
-
 A modern staff directory information system built with Next.js 14, Tailwind CSS, and JSON file storage.
 
 ### Features
