@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "@/components/Logo";
 
 const NAV_LINKS = [
   { href: "/", label: "Dashboard" },
@@ -22,9 +23,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3 shrink-0">
-            <span className="flex h-9 w-9 items-center justify-center rounded border border-white/25 font-display text-sm font-semibold">
-              AI
-            </span>
+            <Logo className="h-9 w-9 rounded-md" />
             <span className="leading-tight">
               <span className="block font-display text-base sm:text-lg tracking-tight">
                 Staff Directory

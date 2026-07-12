@@ -17,14 +17,14 @@ export default function StaffCard({ staff }) {
         <p className="mt-4 font-mono text-[11px] text-navy-200 tracking-wide">{staff.staffId}</p>
       </div>
 
-      <div className="px-4 -mt-6 pb-5">
+      <div className="px-4 -mt-4 pb-5">
         <div className="flex items-end gap-3">
           <div className="h-14 w-14 rounded-md bg-white border border-paper-300 shadow-card flex items-center justify-center font-display text-lg text-navy-800">
             {initials(staff.firstName, staff.lastName)}
           </div>
         </div>
 
-        <h3 className="mt-3 font-display text-lg text-navy-800 group-hover:text-royal-700 transition">
+        <h3 className="mt-4 font-display text-lg text-navy-800 group-hover:text-royal-700 transition">
           {staff.firstName} {staff.lastName}
         </h3>
         <p className="text-sm text-steel-600">{staff.designation?.title}</p>

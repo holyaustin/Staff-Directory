@@ -8,6 +8,7 @@
   { "id": "dep-otm", "code": "OTM", "name": "Office Technology and Management", "facultyId": "fac-sbs", "hod": "stf-0010", "description": "Trains office professionals in modern secretarial and administrative technology." },
   { "id": "dep-slt", "code": "SLT", "name": "Science Laboratory Technology", "facultyId": "fac-sas", "hod": "stf-0011", "description": "Equips technologists to manage laboratory operations in science-based industries." },
   { "id": "dep-sta", "code": "STA", "name": "Statistics", "facultyId": "fac-sas", "hod": "stf-0013", "description": "Provides training in data collection, analysis and statistical reporting." },
+  { "id": "dep-csc", "code": "CSC", "name": "Computer Science", "facultyId": "fac-sas", "hod": null, "description": "Trains students in programming, software development, data structures and computing theory." },
   { "id": "dep-arc", "code": "ARC", "name": "Architectural Technology", "facultyId": "fac-ses", "hod": "stf-0014", "description": "Covers building design, construction drawing and architectural documentation." },
   { "id": "dep-est", "code": "EST", "name": "Estate Management", "facultyId": "fac-ses", "hod": "stf-0016", "description": "Trains professionals in property valuation, management and real estate practice." },
   { "id": "dep-acc", "code": "ACC", "name": "Accountancy", "facultyId": "fac-sfs", "hod": "stf-0017", "description": "Develops competence in financial accounting, auditing and taxation." },

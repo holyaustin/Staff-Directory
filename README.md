@@ -115,7 +115,45 @@ platform.
 
 ---
 
-## 5. API routes
+## 5. Deploying on Netlify
+
+A `netlify.toml` is included so the build works without manual dashboard
+configuration:
+
+```toml
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+```
+
+If you see this build error:
+
+```
+Error: Your publish directory cannot be the same as the base directory of your site.
+```
+
+it means the Netlify site's **Publish directory** field (Site configuration →
+Build & deploy → Build settings) has been manually set to the repo root. Fix:
+open that setting and leave **both** the Base directory and Publish directory
+fields **empty** — the `@netlify/plugin-nextjs` plugin manages the publish
+output itself and should never have it set manually.
+
+**Persistence on Netlify:** the same filesystem limitation from section 5
+applies here — Netlify's API routes run as serverless functions with an
+ephemeral filesystem, so add/edit/delete through the live site will not
+persist between requests or redeploys. The site will still build, deploy, and
+work for browsing/searching the seeded data; only the write operations are
+affected. This is fine for a demo/read-only deployment. If you need working
+writes in production, either deploy on a persistent Node host (see section 5)
+or swap `lib/db.js` to a storage backend that supports serverless writes
+(e.g. Netlify Blobs, a hosted database, etc.) — happy to help with either
+when you're ready.
+
+---
+
+## 6. API routes
 
 | Method | Route                     | Description                        |
 |--------|----------------------------|--------------------------------------|
@@ -134,7 +172,7 @@ platform.
 
 ---
 
-## 6. Design system
+## 7. Design system
 
 - **Colours:** navy (`#0B2545`), royal blue accent (`#14509E`), ink black
   (`#0A0A0C`) and paper white (`#F7F8FA`) — see `tailwind.config.js`.
@@ -147,7 +185,7 @@ platform.
 
 ---
 
-## 7. Extending the system
+## 8. Extending the system
 
 - Add a new dataset by creating a JSON file in `data/`, a `FILES` entry and
   accessor functions in `lib/db.js`, and (optionally) a route in `app/api/`.
