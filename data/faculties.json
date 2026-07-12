@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fac-set",
+    "code": "SET",
+    "name": "School of Engineering Technology",
+    "dean": "stf-0003",
+    "description": "Home to the engineering disciplines including Computer, Electrical/Electronic, Mechanical and Civil Engineering technology programmes.",
+    "established": "1978"
+  },
+  {
+    "id": "fac-sbs",
+    "code": "SBS",
+    "name": "School of Business Studies",
+    "dean": "stf-0007",
+    "description": "Trains students in business administration, marketing and office technology management for the private and public sectors.",
+    "established": "1978"
+  },
+  {
+    "id": "fac-sas",
+    "code": "SAS",
+    "name": "School of Applied Sciences",
+    "dean": "stf-0011",
+    "description": "Covers science laboratory technology and statistics, building a strong applied-science and research foundation.",
+    "established": "1982"
+  },
+  {
+    "id": "fac-ses",
+    "code": "SES",
+    "name": "School of Environmental Studies",
+    "dean": "stf-0014",
+    "description": "Delivers architectural technology and estate management programmes geared towards the built environment.",
+    "established": "1985"
+  },
+  {
+    "id": "fac-sfs",
+    "code": "SFS",
+    "name": "School of Financial Studies",
+    "dean": "stf-0017",
+    "description": "Focuses on accountancy and banking & finance, preparing graduates for the financial services sector.",
+    "established": "1990"
+  }
+]

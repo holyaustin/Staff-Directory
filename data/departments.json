@@ -1,74 +1,15 @@
 [
-  {
-    "id": "dept001",
-    "name": "Computer Science",
-    "code": "CSC",
-    "faculty": "Science and Technology",
-    "hod": "stf001",
-    "description": "Department of Computer Science offering BSc and HND programs",
-    "established": "2005"
-  },
-  {
-    "id": "dept002",
-    "name": "Information Technology",
-    "code": "IT",
-    "faculty": "Science and Technology",
-    "hod": "stf002",
-    "description": "Department of Information Technology focusing on software development and networking",
-    "established": "2010"
-  },
-  {
-    "id": "dept003",
-    "name": "Engineering",
-    "code": "ENG",
-    "faculty": "Engineering",
-    "hod": "stf003",
-    "description": "Department of Engineering offering programs in Electrical, Mechanical, and Civil Engineering",
-    "established": "2000"
-  },
-  {
-    "id": "dept004",
-    "name": "Business Administration",
-    "code": "BA",
-    "faculty": "Management Sciences",
-    "hod": "stf004",
-    "description": "Department of Business Administration preparing future business leaders",
-    "established": "2003"
-  },
-  {
-    "id": "dept005",
-    "name": "Physical Sciences",
-    "code": "PHS",
-    "faculty": "Science and Technology",
-    "hod": "stf005",
-    "description": "Department of Physical Sciences including Physics, Chemistry, and Mathematics",
-    "established": "2002"
-  },
-  {
-    "id": "dept006",
-    "name": "Library and Information Science",
-    "code": "LIS",
-    "faculty": "Education",
-    "hod": "stf006",
-    "description": "Department of Library and Information Science",
-    "established": "2008"
-  },
-  {
-    "id": "dept007",
-    "name": "Administration",
-    "code": "ADM",
-    "faculty": "Administration",
-    "hod": "stf007",
-    "description": "Central Administration Department",
-    "established": "1995"
-  },
-  {
-    "id": "dept008",
-    "name": "Student Affairs",
-    "code": "SA",
-    "faculty": "Administration",
-    "hod": "stf008",
-    "description": "Department of Student Affairs and Welfare",
-    "established": "2000"
-  }
+  { "id": "dep-cpe", "code": "CPE", "name": "Computer Engineering", "facultyId": "fac-set", "hod": "stf-0001", "description": "Trains technologists in computer hardware, embedded systems and software engineering practice." },
+  { "id": "dep-eee", "code": "EEE", "name": "Electrical/Electronic Engineering", "facultyId": "fac-set", "hod": "stf-0004", "description": "Covers power systems, electronics and telecommunications engineering technology." },
+  { "id": "dep-mee", "code": "MEE", "name": "Mechanical Engineering", "facultyId": "fac-set", "hod": "stf-0005", "description": "Produces graduates skilled in production, thermofluid and maintenance engineering." },
+  { "id": "dep-cve", "code": "CVE", "name": "Civil Engineering", "facultyId": "fac-set", "hod": "stf-0006", "description": "Focuses on structural, geotechnical and highway engineering technology." },
+  { "id": "dep-bam", "code": "BAM", "name": "Business Administration and Management", "facultyId": "fac-sbs", "hod": "stf-0007", "description": "Prepares graduates for management roles across public and private organisations." },
+  { "id": "dep-mkt", "code": "MKT", "name": "Marketing", "facultyId": "fac-sbs", "hod": "stf-0009", "description": "Builds competence in sales, marketing communications and consumer behaviour." },
+  { "id": "dep-otm", "code": "OTM", "name": "Office Technology and Management", "facultyId": "fac-sbs", "hod": "stf-0010", "description": "Trains office professionals in modern secretarial and administrative technology." },
+  { "id": "dep-slt", "code": "SLT", "name": "Science Laboratory Technology", "facultyId": "fac-sas", "hod": "stf-0011", "description": "Equips technologists to manage laboratory operations in science-based industries." },
+  { "id": "dep-sta", "code": "STA", "name": "Statistics", "facultyId": "fac-sas", "hod": "stf-0013", "description": "Provides training in data collection, analysis and statistical reporting." },
+  { "id": "dep-arc", "code": "ARC", "name": "Architectural Technology", "facultyId": "fac-ses", "hod": "stf-0014", "description": "Covers building design, construction drawing and architectural documentation." },
+  { "id": "dep-est", "code": "EST", "name": "Estate Management", "facultyId": "fac-ses", "hod": "stf-0016", "description": "Trains professionals in property valuation, management and real estate practice." },
+  { "id": "dep-acc", "code": "ACC", "name": "Accountancy", "facultyId": "fac-sfs", "hod": "stf-0017", "description": "Develops competence in financial accounting, auditing and taxation." },
+  { "id": "dep-baf", "code": "BAF", "name": "Banking and Finance", "facultyId": "fac-sfs", "hod": "stf-0019", "description": "Prepares graduates for careers in banking, investment and financial management." }
 ]

@@ -1,0 +1,14 @@
+[
+  { "id": "des-chief-lec", "title": "Chief Lecturer", "category": "Academic", "level": "CONTISS 15" },
+  { "id": "des-principal-lec", "title": "Principal Lecturer", "category": "Academic", "level": "CONTISS 13" },
+  { "id": "des-senior-lec", "title": "Senior Lecturer", "category": "Academic", "level": "CONTISS 11" },
+  { "id": "des-lecturer-1", "title": "Lecturer I", "category": "Academic", "level": "CONTISS 09" },
+  { "id": "des-lecturer-2", "title": "Lecturer II", "category": "Academic", "level": "CONTISS 08" },
+  { "id": "des-asst-lec", "title": "Assistant Lecturer", "category": "Academic", "level": "CONTISS 07" },
+  { "id": "des-chief-inst", "title": "Chief Instructor", "category": "Academic", "level": "CONTISS 14" },
+  { "id": "des-registrar", "title": "Registrar", "category": "Administrative", "level": "CONTISS 15" },
+  { "id": "des-bursar", "title": "Bursar", "category": "Administrative", "level": "CONTISS 15" },
+  { "id": "des-librarian", "title": "Librarian I", "category": "Academic", "level": "CONTISS 09" },
+  { "id": "des-admin-officer", "title": "Administrative Officer", "category": "Administrative", "level": "CONTISS 08" },
+  { "id": "des-ict-officer", "title": "ICT Officer", "category": "Administrative", "level": "CONTISS 08" }
+]

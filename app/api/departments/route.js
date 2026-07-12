@@ -1,14 +1,7 @@
-import { db } from '@/lib/db';
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
+import { getAllDepartments } from "@/lib/db";
 
 export async function GET() {
-  try {
-    const departments = await db.getDepartments();
-    return NextResponse.json(departments);
-  } catch (error) {
-    return NextResponse.json(
-      { error: error.message },
-      { status: 500 }
-    );
-  }
+  const departments = await getAllDepartments();
+  return NextResponse.json(departments);
 }
