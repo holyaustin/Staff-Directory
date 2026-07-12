@@ -1,17 +1,17 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import SearchBar from '@/components/ui/SearchBar';
 import StaffCard from '@/components/ui/StaffCard';
 import { FaUsers, FaBuilding, FaUserTie } from 'react-icons/fa';
 
-export default function Home() {
+// Create a separate component that uses useSearchParams
+function HomeContent() {
   const searchParams = useSearchParams();
   const initialSearch = searchParams.get('search') || '';
   const [staff, setStaff] = useState([]);
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState(null);
-  const [selectedDepartment, setSelectedDepartment] = useState('');
 
   useEffect(() => {
     fetchStaff();
@@ -135,5 +135,19 @@ export default function Home() {
         </div>
       )}
     </div>
+  );
+}
+
+// Main page component with Suspense
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="text-center py-20">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-poly-blue mx-auto"></div>
+        <p className="mt-4 text-gray-500">Loading...</p>
+      </div>
+    }>
+      <HomeContent />
+    </Suspense>
   );
 }

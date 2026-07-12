@@ -16,9 +16,9 @@ export default function ManageStaff() {
 
   useEffect(() => {
     const filtered = staff.filter(s => 
-      s.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      s.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      s.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      s.firstName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      s.lastName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      s.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       s.departmentName?.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredStaff(filtered);
@@ -124,22 +124,13 @@ export default function ManageStaff() {
                   </td>
                   <td className="px-4 py-3 text-sm">
                     <div className="flex space-x-2">
-                      <Link
-                        href={`/staff/${member.id}`}
-                        className="text-blue-600 hover:text-blue-800"
-                      >
+                      <Link href={`/staff/${member.id}`} className="text-blue-600 hover:text-blue-800">
                         <FaEye />
                       </Link>
-                      <Link
-                        href={`/admin/staff/${member.id}/edit`}
-                        className="text-green-600 hover:text-green-800"
-                      >
+                      <Link href={`/admin/staff/${member.id}/edit`} className="text-green-600 hover:text-green-800">
                         <FaEdit />
                       </Link>
-                      <button
-                        onClick={() => handleDelete(member.id, `${member.firstName} ${member.lastName}`)}
-                        className="text-red-600 hover:text-red-800"
-                      >
+                      <button onClick={() => handleDelete(member.id, `${member.firstName} ${member.lastName}`)} className="text-red-600 hover:text-red-800">
                         <FaTrash />
                       </button>
                     </div>
